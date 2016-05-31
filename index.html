@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jquery slide</title>
+  <script type="text/javascript"  src="https://code.jquery.com/jquery-2.2.4.min.js"> </script>
+  <script type="text/javascript"  src=" http://malsup.github.io/min/jquery.cycle2.min.js"></script>
+  <link rel="stylesheet" href="css/style.css"> </link>
+</head>
+<body>
+  <div id="container">
+    <div id="slideshow" class="cycle-slideshow"
+      data-cycle-fx ="fade"
+      data-cycle-speed="500"
+      data-cycle-timeout="3000"
+      data-cycle-pager="#pager"
+      data-cycle-pager-template="<a href='#'><img src='{{src}}' height=100 width=150 />"
+      data-cycle-prev="#prev"
+      data-cycle-next="#next"
+      data-cycle-manual-fx="scrollHorz"
+      data-cycle-manual-speed="400" >
+      <img src="images/na1.jpg" alt="nature1"></img>
+      <img src="images/na2.jpg" alt="nature2"></img>
+      <img src="images/na3.jpg" alt="nature3"></img>
+      <img src="images/na4.jpg" alt="nature4"></img>
+      <img src="images/na5.jpg" alt="nature5"></img>
+    </div>
+    <!-- container   -->
+    <div id="pager"></div>
+    <!-- pagination -->
+    <img id="prev" src="images/previous.jpg" alt="previous"></img>
+    <img id="next" src="images/next.jpg" alt="next"></img>
+    <!-- buttons -->
+  </div>
+</body>
+</html>
